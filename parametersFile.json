@@ -1,0 +1,195 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "nestedTemplatesLocation": {
+      "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/nestedtemplates/"
+    },
+    "artifactsLocation": {
+      "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
+    },
+    "hostpoolName": {
+      "value": "JPS-AVD-HostPool02"
+    },
+    "hostpoolFriendlyName": {
+      "value": "JPS-DevOps01"
+    },
+    "hostpoolDescription": {
+      "value": "Deployed using DevOps ARm Template"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "workSpaceName": {
+      "value": "JPS-AVD-WorkSpace01"
+    },
+    "workspaceLocation": {
+      "value": "eastus"
+    },
+    "workspaceResourceGroup": {
+      "value": "AzVDesktop"
+    },
+    "allApplicationGroupReferences": {
+      "value": "JPSApps01"
+    },
+    "addToWorkspace": {
+      "value": null
+    },
+    "administratorAccountUsername": {
+      "value": "Shadrach"
+    },
+    "administratorAccountPassword": {
+      "value": null
+    },
+    "vmAdministratorAccountUsername": {
+      "value": "jpsitsolutions\\shadrach"
+    },
+    "vmAdministratorAccountPassword": {
+      "value": null
+    },
+    "availabilityOption": {
+      "value": "None"
+    },
+    "availabilitySetName": {
+      "value": null
+    },
+    "createAvailabilitySet": {
+      "value": null
+    },
+    "availabilitySetUpdateDomainCount": {
+      "value": 5
+    },
+    "availabilitySetFaultDomainCount": {
+      "value": 2
+    },
+    "availabilityZone": {
+      "value": 1
+    },
+    "vmResourceGroup": {
+      "value": "AzVDesktop"
+    },
+    "vmLocation": {
+      "value": "EastUS"
+    },
+    "vmSize": {
+      "value": "Standard_B2ms"
+    },
+    "vmNumberOfInstances": {
+      "value": 2
+    },
+    "vmNamePrefix": {
+      "value": "JPS"
+    },
+    "vmImageType": {
+      "value": "CustomImage"
+    },
+    "vmGalleryImageOffer": {
+      "value": null
+    },
+    "vmGalleryImagePublisher": {
+      "value": "Microsoft"
+    },
+    "vmGalleryImageSKU": {
+      "value": "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus-2004"
+    },
+    "vmImageVhdUri": {
+      "value": null
+    },
+    "vmCustomImageSourceId": {
+      "value": "/subscriptions/1024787e-3094-401f-b230-8e4d9aca4011/resourceGroups/Packer-Build2/providers/Microsoft.Compute/galleries/ImageGallery/images/Win10MSimages/versions/0.24870.46896"
+    },
+    "vmDiskType": {
+      "value": "StandardSSD_LRS"
+    },
+    "vmUseManagedDisks": {
+      "value": true
+    },
+    "storageAccountResourceGroupName": {
+      "value": "Packer-Build2"
+    },
+    "existingVnetName": {
+      "value": "AVDvNet"
+    },
+    "existingSubnetName": {
+      "value": "avd-subnet"
+    },
+    "virtualNetworkResourceGroupName": {
+      "value": "AzVNetworks"
+    },
+    "createNetworkSecurityGroup": {
+      "value": null
+    },
+    "networkSecurityGroupId": {
+      "value": "/subscriptions/1024787e-3094-401f-b230-8e4d9aca4011/resourceGroups/AzVNetworks/providers/Microsoft.Network/networkSecurityGroups/AVDvNetnsg"
+    },
+    "networkSecurityGroupRules": {
+      "value": []
+    },
+    "hostpoolType": {
+      "value": "Pooled"
+    },
+    "personalDesktopAssignmentType": {
+      "value": null
+    },
+    "maxSessionLimit": {
+      "value": 99999
+    },
+    "loadBalancerType": {
+      "value": "BreadthFirst"
+    },
+    "customRdpProperty": {
+      "value": null
+    },
+    "vmTemplate": {
+      "value": null
+    },
+    "tokenExpirationTime": {
+      "value": "2021-09-18T01:41:17.9115455Z"
+    },
+    "hostpoolTags": {
+      "value": {}
+    },
+    "applicationGroupTags": {
+      "value": {}
+    },
+    "availabilitySetTags": {
+      "value": {}
+    },
+    "networkInterfaceTags": {
+      "value": {}
+    },
+    "networkSecurityGroupTags": {
+      "value": {}
+    },
+    "virtualMachineTags": {
+      "value": {}
+    },
+    "imageTags": {
+      "value": {}
+    },
+    "apiVersion": {
+      "value": "2019-12-10-preview"
+    },
+    "deploymentId": {
+      "value": null
+    },
+    "validationEnvironment": {
+      "value": null
+    },
+    "preferredAppGroupType": {
+      "value": "Desktop"
+    },
+    "ouPath": {
+      "value": "OU=AADDC Computers,DC=jpsitsolutions,DC=tech"
+    },
+    "domain": {
+      "value": "jpsitsolutions.tech"
+    },
+    "aadJoin": {
+      "value": null
+    },
+    "intune": {
+      "value": null
+    }
+  }
+}
