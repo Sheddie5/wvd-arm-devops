@@ -1,5 +1,4 @@
- },
-    vmTemplate": {
+vmTemplate": {
       value": "{\"domain\":\"alven.local\",
         \"galleryImageOffer\":null,
         \"galleryImagePublisher\":null,
